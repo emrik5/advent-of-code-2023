@@ -6,7 +6,11 @@ const BLUE_COUNT: u32 = 14;
 
 pub fn second_p1() -> Result<()> {
     let inp = fs::read_to_string("input/second.txt")?
+        .replace(' ', "")
         .lines()
         .map(|line| line);
     Ok(())
+}
+fn spilt_input(s: &str) {
+    s.split(pat)
 }
